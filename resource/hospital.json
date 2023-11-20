@@ -1,0 +1,123 @@
+[
+    {
+        "name":"Apollo Spectra Hospital",
+        "rating" : 4.5,
+        "address": "143, 1st Cross Rd, near Nagarjuna Hotel, KHB Colony, 5th Block ,Kormangala, Banglore",
+        "pincode" : 560034,
+        "services" : ["Orthopaedic","Laparoscopic","Urology","Varicose Veins","ENT","Gynacology","Baiatric","Ophthamology","Pediatric","Cosmetic","Plastic"],
+        "thumbnail" : "https://i.postimg.cc/jjbJnq9T/IMG-0864.jpg",
+        "images" : [
+            "https://i.postimg.cc/brDQHCRf/IMG-0865.jpg",
+            "https://i.postimg.cc/Sst69FCG/IMG-0866.jpg",
+            "https://i.postimg.cc/wvB53Tyv/IMG-0867.jpg"
+        ],
+        "contact" : "08448440991",
+        "direction" : "https://maps.app.goo.gl/t3iteYR3L8BStT5k7?g_st=ic"
+    },
+    {
+        "name":" Sparsh Hospital",
+        "rating" : 4.6,
+        "address": "4/1 Tumkur Rd, Yeshwanthpur Industrial Area, Phase1 , Yeshwanthpur, Bengaluru, Karnataka",
+        "pincode" : 560022,
+        "services" : ["Anaesthesia","Physiotheraphy","Radio Diagnosis","Cardiology","ENT","Gynacology","Obstetrics","Ophthamology","Pediatric","Dermotology","Pulmonology","Psychiatry"],
+        "thumbnail" : "https://i.postimg.cc/JzG8LSQW/Sparsh1.jpg",
+        "images" : [
+            "https://i.postimg.cc/CxXgLJvn/Sparsh2.jpg",
+            "https://i.postimg.cc/DzGKWsDj/Sparsh3.jpg",
+            "https://i.postimg.cc/wvB53Tyv/IMG-0867.jpg"
+        ],
+        "contact" : "08061222000",
+        "direction" : "https://maps.app.goo.gl/t3iteYR3L8BStT5k7?g_st=ic"
+    },
+    {
+        "name":"Apollo Spectra Hospital",
+        "rating" : 4.5,
+        "address": "143, 1st Cross Rd, near Nagarjuna Hotel, KHB Colony, 5th Block ,Kormangala, Banglore",
+        "pincode" : 560034,
+        "services" : ["Orthopaedic","Laparoscopic","Urology","Varicose Veins","ENT","Gynacology","Baiatric","Ophthamology","Pediatric","Cosmetic","Plastic"],
+        "thumbnail" : "https://i.postimg.cc/jjbJnq9T/IMG-0864.jpg",
+        "images" : [
+            "https://i.postimg.cc/brDQHCRf/IMG-0865.jpg",
+            "https://i.postimg.cc/Sst69FCG/IMG-0866.jpg",
+            "https://i.postimg.cc/wvB53Tyv/IMG-0867.jpg"
+        ],
+        "contact" : "08448440991",
+        "direction" : "https://maps.app.goo.gl/t3iteYR3L8BStT5k7?g_st=ic"
+    },
+    {
+        "name":" Sparsh Hospital",
+        "rating" : 4.6,
+        "address": "4/1 Tumkur Rd, Yeshwanthpur Industrial Area, Phase1 , Yeshwanthpur, Bengaluru, Karnataka",
+        "pincode" : 560022,
+        "services" : ["Anaesthesia","Physiotheraphy","Radio Diagnosis","Cardiology","ENT","Gynacology","Obstetrics","Ophthamology","Pediatric","Dermotology","Pulmonology","Psychiatry"],
+        "thumbnail" : "https://i.postimg.cc/JzG8LSQW/Sparsh1.jpg",
+        "images" : [
+            "https://i.postimg.cc/CxXgLJvn/Sparsh2.jpg",
+            "https://i.postimg.cc/DzGKWsDj/Sparsh3.jpg",
+            "https://i.postimg.cc/wvB53Tyv/IMG-0867.jpg"
+        ],
+        "contact" : "08061222000",
+        "direction" : "https://maps.app.goo.gl/t3iteYR3L8BStT5k7?g_st=ic"
+    },
+    {
+        "name":"Apollo Spectra Hospital",
+        "rating" : 4.5,
+        "address": "143, 1st Cross Rd, near Nagarjuna Hotel, KHB Colony, 5th Block ,Kormangala, Banglore",
+        "pincode" : 560034,
+        "services" : ["Orthopaedic","Laparoscopic","Urology","Varicose Veins","ENT","Gynacology","Baiatric","Ophthamology","Pediatric","Cosmetic","Plastic"],
+        "thumbnail" : "https://i.postimg.cc/jjbJnq9T/IMG-0864.jpg",
+        "images" : [
+            "https://i.postimg.cc/brDQHCRf/IMG-0865.jpg",
+            "https://i.postimg.cc/Sst69FCG/IMG-0866.jpg",
+            "https://i.postimg.cc/wvB53Tyv/IMG-0867.jpg"
+        ],
+        "contact" : "08448440991",
+        "direction" : "https://maps.app.goo.gl/t3iteYR3L8BStT5k7?g_st=ic"
+    },
+    {
+        "name":" Sparsh Hospital",
+        "rating" : 4.6,
+        "address": "4/1 Tumkur Rd, Yeshwanthpur Industrial Area, Phase1 , Yeshwanthpur, Bengaluru, Karnataka",
+        "pincode" : 560022,
+        "services" : ["Anaesthesia","Physiotheraphy","Radio Diagnosis","Cardiology","ENT","Gynacology","Obstetrics","Ophthamology","Pediatric","Dermotology","Pulmonology","Psychiatry"],
+        "thumbnail" : "https://i.postimg.cc/JzG8LSQW/Sparsh1.jpg",
+        "images" : [
+            "https://i.postimg.cc/CxXgLJvn/Sparsh2.jpg",
+            "https://i.postimg.cc/DzGKWsDj/Sparsh3.jpg",
+            "https://i.postimg.cc/wvB53Tyv/IMG-0867.jpg"
+        ],
+        "contact" : "08061222000",
+        "direction" : "https://maps.app.goo.gl/t3iteYR3L8BStT5k7?g_st=ic"
+    },
+    {
+        "name":"Apollo Spectra Hospital",
+        "rating" : 4.5,
+        "address": "143, 1st Cross Rd, near Nagarjuna Hotel, KHB Colony, 5th Block ,Kormangala, Banglore",
+        "pincode" : 560034,
+        "services" : ["Orthopaedic","Laparoscopic","Urology","Varicose Veins","ENT","Gynacology","Baiatric","Ophthamology","Pediatric","Cosmetic","Plastic"],
+        "thumbnail" : "https://i.postimg.cc/jjbJnq9T/IMG-0864.jpg",
+        "images" : [
+            "https://i.postimg.cc/brDQHCRf/IMG-0865.jpg",
+            "https://i.postimg.cc/Sst69FCG/IMG-0866.jpg",
+            "https://i.postimg.cc/wvB53Tyv/IMG-0867.jpg"
+        ],
+        "contact" : "08448440991",
+        "direction" : "https://maps.app.goo.gl/t3iteYR3L8BStT5k7?g_st=ic"
+    },
+    {
+        "name":" Sparsh Hospital",
+        "rating" : 4.6,
+        "address": "4/1 Tumkur Rd, Yeshwanthpur Industrial Area, Phase1 , Yeshwanthpur, Bengaluru, Karnataka",
+        "pincode" : 560022,
+        "services" : ["Anaesthesia","Physiotheraphy","Radio Diagnosis","Cardiology","ENT","Gynacology","Obstetrics","Ophthamology","Pediatric","Dermotology","Pulmonology","Psychiatry"],
+        "thumbnail" : "https://i.postimg.cc/JzG8LSQW/Sparsh1.jpg",
+        "images" : [
+            "https://i.postimg.cc/CxXgLJvn/Sparsh2.jpg",
+            "https://i.postimg.cc/DzGKWsDj/Sparsh3.jpg",
+            "https://i.postimg.cc/wvB53Tyv/IMG-0867.jpg"
+        ],
+        "contact" : "08061222000",
+        "direction" : "https://maps.app.goo.gl/t3iteYR3L8BStT5k7?g_st=ic"
+    }
+    
+]
