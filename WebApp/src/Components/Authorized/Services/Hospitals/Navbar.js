@@ -30,7 +30,7 @@ function Navbar() {
 				onClick={showNavbar}>
 				<FaBars />
 			</button>
-			<button className="signup">Sign up</button>
+			{/* <button className="signup">Sign up</button> */}
 		</header>
 	);
 }
