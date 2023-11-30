@@ -33,25 +33,17 @@ const Product = () => {
             Karnataka.</h1>
               </a></span>
         </div>
-        <p className="leading-relaxed">As a speciality hospital,Apollo Spectra Hospital offers expert and quality healthcare,with all the benefits of a large hospital in a friendly and more accessible facility.With 17 centres spread across 12 cities,a team of 2,730+ leading doctors,and more than 2,00,000 succesfull surgeries.Apollo Hospitals envisions for a new horizon-a future where the nation is healthy,where its people are fighting fit,and India emerges as the preferred global healthcare destination.</p>
+        <p className="leading-relaxed">As a speciality hospital,Apollo Spectra Hospital offers expert and quality healthcare,with all the benefits of a large hospital in a friendly and more accessible facility.With 17 centres spread across 12 cities,a team of 2,730+ leading doctors,and more than 2,00,000 succesfull surgeries.<br/><br/>
+         </p>
+         <a class="text-gray-600"><h1 className="text-sm title-font text-gray-500 tracking-widest">Address: 143, 1st Cross Rd, near Nagarjuna Hotel, KHB Colony, 5th Block ,Kormangala, Banglore-560034.<br/><br/>
+            </h1>
+              </a>
+        <div className="flex">
+        <span class="title-font font-medium text-xl text-gray-500">Services:"Orthopaedic","Laparoscopic","Urology","Varicose Veins","ENT","Gynacology","Baiatric","Ophthamology","Pediatric","Cosmetic","Plastic".</span>
         <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
           <div className="flex">
           </div>
           <div className="flex ml-6 items-center">
-            <span className="mr-2">Services</span>
-            <div className="relative">
-              <select className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
-                <option>Orthopaedic</option>
-                <option>Urology</option>
-                <option>Varicose Veins</option>
-                <option>ENT</option>
-                <option>Gynacology</option>
-                <option>Baiatric</option>
-                <option>Ophthamology</option>
-                <option>Pediatric</option>
-                <option>Cosmetic</option>
-                <option>Plastic</option>
-              </select>
               <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4" viewBox="0 0 24 24">
                   <path d="M6 9l6 6 6-6"></path>
@@ -61,7 +53,6 @@ const Product = () => {
           </div>
         </div>
         <div className="flex">
-        <span class="title-font font-medium text-xl text-gray-500">Address: 143, 1st Cross Rd, near Nagarjuna Hotel, KHB Colony, 5th Block ,Kormangala, Banglore-560034.</span>
           <button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Appointment Scheduling</button>
           <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
