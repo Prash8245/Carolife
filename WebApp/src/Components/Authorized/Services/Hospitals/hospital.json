@@ -1,7 +1,7 @@
 [
     {
         "name":"Apollo Spectra Hospital",
-        "rating" : 4.5,
+        "rating" : 3,
         "address": "143, 1st Cross Rd, near Nagarjuna Hotel, KHB Colony, 5th Block ,Kormangala, Banglore",
         "pincode" : 560034,
         "services" : ["Orthopaedic","Laparoscopic","Urology","Varicose Veins","ENT","Gynacology","Baiatric","Ophthamology","Pediatric","Cosmetic","Plastic"],
@@ -16,7 +16,7 @@
     },
     {
         "name":" Sparsh Hospital",
-        "rating" : 4.6,
+        "rating" : 4,
         "address": "4/1 Tumkur Rd, Yeshwanthpur Industrial Area, Phase1 , Yeshwanthpur, Bengaluru, Karnataka",
         "pincode" : 560022,
         "services" : ["Anaesthesia","Physiotheraphy","Radio Diagnosis","Cardiology","ENT","Gynacology","Obstetrics","Ophthamology","Pediatric","Dermotology","Pulmonology","Psychiatry"],
@@ -31,7 +31,7 @@
     },
     {
         "name":"Apollo Spectra Hospital",
-        "rating" : 4.5,
+        "rating" : 3,
         "address": "143, 1st Cross Rd, near Nagarjuna Hotel, KHB Colony, 5th Block ,Kormangala, Banglore",
         "pincode" : 560034,
         "services" : ["Orthopaedic","Laparoscopic","Urology","Varicose Veins","ENT","Gynacology","Baiatric","Ophthamology","Pediatric","Cosmetic","Plastic"],
@@ -46,7 +46,7 @@
     },
     {
         "name":" Sparsh Hospital",
-        "rating" : 4.6,
+        "rating" : 4,
         "address": "4/1 Tumkur Rd, Yeshwanthpur Industrial Area, Phase1 , Yeshwanthpur, Bengaluru, Karnataka",
         "pincode" : 560022,
         "services" : ["Anaesthesia","Physiotheraphy","Radio Diagnosis","Cardiology","ENT","Gynacology","Obstetrics","Ophthamology","Pediatric","Dermotology","Pulmonology","Psychiatry"],
@@ -61,7 +61,7 @@
     },
     {
         "name":"Apollo Spectra Hospital",
-        "rating" : 4.5,
+        "rating" : 3,
         "address": "143, 1st Cross Rd, near Nagarjuna Hotel, KHB Colony, 5th Block ,Kormangala, Banglore",
         "pincode" : 560034,
         "services" : ["Orthopaedic","Laparoscopic","Urology","Varicose Veins","ENT","Gynacology","Baiatric","Ophthamology","Pediatric","Cosmetic","Plastic"],
@@ -76,7 +76,7 @@
     },
     {
         "name":" Sparsh Hospital",
-        "rating" : 4.6,
+        "rating" : 4,
         "address": "4/1 Tumkur Rd, Yeshwanthpur Industrial Area, Phase1 , Yeshwanthpur, Bengaluru, Karnataka",
         "pincode" : 560022,
         "services" : ["Anaesthesia","Physiotheraphy","Radio Diagnosis","Cardiology","ENT","Gynacology","Obstetrics","Ophthamology","Pediatric","Dermotology","Pulmonology","Psychiatry"],
@@ -91,7 +91,7 @@
     },
     {
         "name":"Apollo Spectra Hospital",
-        "rating" : 4.5,
+        "rating" : 3,
         "address": "143, 1st Cross Rd, near Nagarjuna Hotel, KHB Colony, 5th Block ,Kormangala, Banglore",
         "pincode" : 560034,
         "services" : ["Orthopaedic","Laparoscopic","Urology","Varicose Veins","ENT","Gynacology","Baiatric","Ophthamology","Pediatric","Cosmetic","Plastic"],
@@ -106,7 +106,7 @@
     },
     {
         "name":" Sparsh Hospital",
-        "rating" : 4.6,
+        "rating" : 4,
         "address": "4/1 Tumkur Rd, Yeshwanthpur Industrial Area, Phase1 , Yeshwanthpur, Bengaluru, Karnataka",
         "pincode" : 560022,
         "services" : ["Anaesthesia","Physiotheraphy","Radio Diagnosis","Cardiology","ENT","Gynacology","Obstetrics","Ophthamology","Pediatric","Dermotology","Pulmonology","Psychiatry"],
