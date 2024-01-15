@@ -1,0 +1,114 @@
+[
+    {
+    "name": "Labgenius Diagnostics ",
+    "rating" : 4.5,
+    "address":"No:28, 80 Feet Rd, Hal, HAL 3rd Stage, Indiranagar, Bengaluru, Karnataka", 
+    "pincode" : 560075,
+    "services" : ["Allergy testing","Anemia testing","Blood testing","Endocrinology testing","Thyroid testing","Virology","Clinical Pathology","Histopathology"],
+    "thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsx_OIDQcYiTQX18ltFh_51rIiOaqcAbv935PP2tGpmW_TqwA1mzchJHwRq5Nz3LnmQso&usqp=CAU",
+    "images" : [
+        "https://images.app.goo.gl/5v5qCzzgCgdEGBDx8",
+        "https://images.app.goo.gl/ySNAji4et9YWKhys9"
+    ],
+    "contact" : "095135 92401",
+    "direction" : "https://maps.app.goo.gl/eotC8vHgfcVKysts9"
+    },
+    {   
+    "name": "Ecotown Diagnostics",
+    "rating" : 4.7,
+    "address":"No 7,1st Floor, AVR Arcade Yaranpalya, Bus Stop, Ramamurthi Nagar Main Rd, opp. to Shell Petrol Bunk, Diagonally, Ramamurthy Nagar, Bengaluru, Karnataka",
+    "pincode" : 560016,
+    "services" : ["CT scanning","Diagnostic imaging","ECG testing","Enhocardiogram","Mammograms","Pulmonary function testing","Radiology"],
+    "thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCMet7UCroeufEtH1n_NG7nOGaYKpGMMPQdgQviELhTj-uqQQ88F2foGfpdThNRSxJD-8&usqp=CAU",
+    "images" : [
+        "https://images.app.goo.gl/ToyNHsygCiL8pppz9",
+        "https://images.app.goo.gl/3bW54GzZSSSoQ8aX7"
+    ],
+    "contact" : "09606766561",
+    "direction" : "https://maps.app.goo.gl/RSiJpGExY5nhYuqFA"
+    },
+    {
+    "name": "Central Lab. Metropolis Healthcare Limited",
+    "rating" : 4.1,
+    "address":" Ground, First & 3rd Floor,Shivashankar Plaza Lalbagh Road, 19, Richmond Cir Flyover, Bengaluru, Karnataka" ,
+    "pincode" : 560027,
+    "services" : ["Clinical Trails","Hospital Lab Management","Home health Services","Preventive health checkups","Corapte and wellness Solutions"],
+    "thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFkpVq1PFwr3VRyxtFzqgyBCQcekwhOp9jO8sEcPr0XI_ZQXj0iI_6Ie3Ca4se_M1fQnQ&usqp=CAU",
+    "images" : [
+        "https://www.google.com/maps/place/Central+Lab.+(We+are+Now+A+Unit+of+Metropolis+Healthcare+Limited)/@12.9642187,77.5969982,3a,75y/data=!3m8!1e2!3m6!1sAF1QipP248weA_80_GGXaZ0mx4gH1OBx94-u8g10nd-3!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipP248weA_80_GGXaZ0mx4gH1OBx94-u8g10nd-3%3Dw203-h135-k-no!7i3872!8i2592!4m11!1m2!2m1!1sCentral+Lab.!3m7!1s0x3bae15d77823b981:0xb449a7ff284cfb75!8m2!3d12.9643249!4d77.5969215!10e5!15sCgxDZW50cmFsIExhYi6SAQttZWRpY2FsX2xhYuABAA!16s%2Fg%2F1tfx3bnn?hl=en&entry=ttu#",
+        "https://images.app.goo.gl/Tpvp1fHNduzfsQbV7"         
+    ],
+    "contact" : "095136 95434",
+    "direction" : "https://maps.app.goo.gl/1vdG5VvJ2TcmTxiS7"
+    },
+    {
+    "name": "Anand Diagnostic Laboratory",
+    "rating" : 4.8,
+    "address":"2403/1, 13th Main Road, North, E Block, Sahakar Nagar, Bengaluru, Karnataka" ,
+    "pincode" : 560092,
+    "services" : ["Blood pressure","Sugar level","ECG testing","Thyroid testing","CT scanning","Diagnostic imaging"],
+    "thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREHFSDMjzLKalSi6bi8nIJUsnhiplUBuF-cTeWPi1FiJwzvhX2KmvJ37OWM6EEoo962to&usqp=CAU",
+    "images" : [
+        "https://images.app.goo.gl/56dgFvW3tLJrrMSy9",
+        "https://images.app.goo.gl/PcF8ghUHRWdf48ie9"
+    ],
+    "contact" : "08023628480",
+    "direction" : "https://maps.app.goo.gl/feTp2E6kWds8wv5RA"
+    },
+    {
+    "name": "Aster Labs",
+    "rating" : 4.9,
+    "address":" 559/5, 1st Cross Rd, opposite to Mahalakshmi Sweets, Sahakar Nagar, Kodigehalli, Bengaluru, Karnataka",
+    "pincode" : 560092,
+    "services" : ["Prostate test","Pulmonary function testing","Thyroid testing","True case essentail","True heart care","Blood test"],
+    "thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvXB7yDkyGrrBFhIrJxUF4JTUsX7TSQY-0BHzoMc665kIjjflsJA2aZwXtFh3kFQyQD5A&usqp=CAU",
+    "images" : [
+        "https://images.app.goo.gl/grafzkvXSrbrzA2r6",
+        "https://images.app.goo.gl/HaCWMukVeGTNxxQL6"
+    ],
+    "contact" : "080 4125 2525",
+    "direction" : "https://maps.app.goo.gl/BUBwCBkXpPych8BV6"
+    },
+    {
+    "name": "Redcliffe Labs",
+    "rating" : 4.3,
+    "address":"Building No 168, 1st Floor Sarathy, 9 Main, Sector 6, HSR Layout, Bengaluru, Karnataka" ,
+    "pincode" : 560102,
+    "services" : ["Blood pressure","Sugar level","ECG testing","Thyroid testing","CT scanning","Diagnostic imaging"],
+    "thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMh-tQ--iqgsHoBS_achYFtCR6ymw2mpH1HvFf-meZ-eYWzuAbABrsFxCJLrRo3DCt_h0&usqp=CAU",
+    "images" : [
+        "https://images.app.goo.gl/KwdFddhYBmDmmMJZ7",
+        "https://images.app.goo.gl/F9AbaBgSAyuuE2WcA"
+    ],
+    "contact" : "092890 98723",
+    "direction" : "https://maps.app.goo.gl/yN7BNxepn3QE2421A"
+    },
+    {
+        "name": "Labgenius Diagnostics ",
+        "rating" : 4.5,
+        "address":"No:28, 80 Feet Rd, Hal, HAL 3rd Stage, Indiranagar, Bengaluru, Karnataka", 
+        "pincode" : 560075,
+        "services" : ["Allergy testing","Anemia testing","Blood testing","Endocrinology testing","Thyroid testing","Virology","Clinical Pathology","Histopathology"],
+        "thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsx_OIDQcYiTQX18ltFh_51rIiOaqcAbv935PP2tGpmW_TqwA1mzchJHwRq5Nz3LnmQso&usqp=CAU",
+        "images" : [
+            "https://images.app.goo.gl/5v5qCzzgCgdEGBDx8",
+            "https://images.app.goo.gl/ySNAji4et9YWKhys9"
+        ],
+        "contact" : "095135 92401",
+        "direction" : "https://maps.app.goo.gl/eotC8vHgfcVKysts9"
+        },
+        {   
+        "name": "Ecotown Diagnostics",
+        "rating" : 4.7,
+        "address":"No 7,1st Floor, AVR Arcade Yaranpalya, Bus Stop, Ramamurthi Nagar Main Rd, opp. to Shell Petrol Bunk, Diagonally, Ramamurthy Nagar, Bengaluru, Karnataka",
+        "pincode" : 560016,
+        "services" : ["CT scanning","Diagnostic imaging","ECG testing","Enhocardiogram","Mammograms","Pulmonary function testing","Radiology"],
+        "thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCMet7UCroeufEtH1n_NG7nOGaYKpGMMPQdgQviELhTj-uqQQ88F2foGfpdThNRSxJD-8&usqp=CAU",
+        "images" : [
+            "https://images.app.goo.gl/ToyNHsygCiL8pppz9",
+            "https://images.app.goo.gl/3bW54GzZSSSoQ8aX7"
+        ],
+        "contact" : "09606766561",
+        "direction" : "https://maps.app.goo.gl/RSiJpGExY5nhYuqFA"
+        }
+]

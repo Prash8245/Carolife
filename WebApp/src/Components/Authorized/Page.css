@@ -1,4 +1,4 @@
-.container{
+.container1{
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -117,7 +117,7 @@
 }
 
 @media only screen and (max-width: 767px){
-    .container{
+    .container1{
         display: flex;
     flex-direction: column;
     position: absolute;

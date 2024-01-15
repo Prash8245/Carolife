@@ -1,9 +1,15 @@
-import { useRef } from "react";
+import { useRef,useContext} from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./main.css";
+import { Link } from "react-router-dom";
+import { UserData } from "../../../../Context/userDataContext";
+// import {BASE_URL} from '../../../../config';
+// import {toast} from 'react-toastify';
 
 function Navbar() {
 	const navRef = useRef();
+	const userD = useContext(UserData);
+	// const navigate = useNavigate();
 
 	const showNavbar = () => {
 		navRef.current.classList.toggle(
@@ -13,12 +19,17 @@ function Navbar() {
 
 	return (
 		<header>
-			<h3>𝒞𝒶𝓇𝑜𝐿𝒾𝒻𝑒</h3>
+			<Link to='/home'>𝒞𝒶𝓇𝑜𝐿𝒾𝒻𝑒</Link>
 			<nav ref={navRef}>
-				<a href="/#">Appointment Schedule</a>
-				<a href="/#">Blood Bank</a>
-				<a href="/#">Laboratory</a>
-				<a href="/#">History</a>
+				{/* <a href="/#">Appointment Schedule</a> */}
+				<Link to="/blood-bank">Blood Bank</Link>
+				<Link to='/laboratory'>Laboratory</Link>
+				<Link to={'/profile'}>Profile</Link>
+				<Link to='/' onClick={()=>{
+					userD.SetuserData(null);
+				}}>Logout</Link>
+				{/* onClick={getUserData} */}
+
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
