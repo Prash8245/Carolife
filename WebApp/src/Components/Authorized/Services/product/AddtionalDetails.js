@@ -6,6 +6,7 @@ import {toast} from 'react-toastify';
 import {Button, Dialog, DialogHeader, DialogBody, DialogFooter, Badge} from "@material-tailwind/react";
 import {UserData} from '../../../../Context/userDataContext';
 import person from '../../../../Assets/dummy-doctor.jpg';
+import { commanGet, commanPost } from '../../../../Context/CommanMethods';
 
 export default function AdditionalDetails(propsData) {
     // console.log(propsData.data)
@@ -26,12 +27,14 @@ export default function AdditionalDetails(propsData) {
     async function fetchData() {
         try {
             // console.log(dataBody)
-            const res = await fetch(`${BASE_URL}doctor/DocGet`, {
-                method: "get",
-                headers: {
-                    "Content-Type": "application/json"
-                }
-            });
+            // const res = await fetch(`${BASE_URL}doctor/DocGet`, {
+            //     method: "get",
+            //     headers: {
+            //         "Content-Type": "application/json"
+            //     }
+            // });
+
+            const res = await commanGet('doctor/DocGet');
 
             const message = await res.json();
             if (!res.ok) {
@@ -68,13 +71,15 @@ export default function AdditionalDetails(propsData) {
                 .value
         }
         try {
-            const res = await fetch(`${BASE_URL}appointment/appoint`, {
-                method: "post",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(dataBody)
-            });
+            // const res = await fetch(`${BASE_URL}appointment/appoint`, {
+            //     method: "post",
+            //     headers: {
+            //         "Content-Type": "application/json"
+            //     },
+            //     body: JSON.stringify(dataBody)
+            // });
+            var url = `appointment/appoint`;
+            const res = await commanPost(url,dataBody);
     
             const message = await res.json();
             if (!res.ok) {
@@ -95,7 +100,7 @@ export default function AdditionalDetails(propsData) {
 
     useEffect(() => {
         fetchData()
-    });
+    },[]);
 
     return (
         <div className='bg-gray-100'>

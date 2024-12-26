@@ -2,13 +2,15 @@ import React,{useState} from 'react';
 import {Tabs, TabsHeader, Tab,Card,CardHeader,Typography,Button,CardBody,CardFooter,Menu,MenuHandler,MenuList,MenuItem} from "@material-tailwind/react";
 import data from './donar.json';
 import { Link } from 'react-router-dom';
+import { bloodGrp } from '../../../../../Context/ArrayContext';
 
 
 
 export default function Donars() {
     const [blood, setdata] = useState("All");
+    
     const TABLE_HEAD = ["Name", "Blood Type", "Address", "Contact", "History"];
-    const bloodGrp = ["All","A+","A-","B+","B-","AB+","AB-","O+","O-"]
+    
 
   return (
     <div className='blue-gray-100'>

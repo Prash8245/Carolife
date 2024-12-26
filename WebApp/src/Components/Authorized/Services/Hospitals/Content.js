@@ -1,78 +1,27 @@
 /* eslint-disable */
 import React, {useContext, useEffect, useState} from 'react'
+import PulseLoader from 'react-spinners/PulseLoader';
 // import data from './hospital.json' ;
 import {toast} from "react-toastify";
 import {BASE_URL} from '../../../../config';
 import {Link} from 'react-router-dom';
 import {UserData} from '../../../../Context/userDataContext';
+import { commanGet, commanPost } from '../../../../Context/CommanMethods';
 
-export default function Content() {
+export default function Content(props) {
 
+    const [loading, setLoading] = useState(true);
     const [data,
         setdata] = useState([]);
-    const [lat,
-        setlat] = useState(13.017966);
-    const [long,
-        setlong] = useState(77.522527);
-    const useCat = useContext(UserData);
-    const [regexPattern,
-        setpattern] = useState("");
-
-    const getLocation = async() => {
-        if (navigator.geolocation) {
-            await navigator
-                .geolocation
-                .getCurrentPosition(position => {
-                    const {latitude, longitude} = position.coords;
-                    setlat(latitude);
-                    setlong(longitude);
-                    // console.log(currentLocation)
-                }, error => {
-                    console.error(`Error getting current location: ${error.message}`);
-                });
-        } else {
-            console.error('Geolocation is not supported by this browser.');
-
-        }
-    };
-
-    const fetchData = async() => {
-        try {
-            getLocation();
-            const dataBody = {
-                latitude: lat,
-                longitude: long,
-                search : regexPattern
-            }
-
-            const res = await fetch(`${BASE_URL}data/hospitals`, {
-                method: "post",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(dataBody)
-            });
-
-            const message = await res.json();
-            if (!res.ok) {
-                throw new Error(message);
-            }
-            toast.success(message);
-            // console.log(message);
-            setdata(message.data);
-        } catch (error) {
-            console.log(error);
-            throw new Error(error);
-        }
-    }
+    
 
     useEffect(() => {
-        setpattern(useCat.search)
-        fetchData();
+        setdata(props.Data);
     } );
 
     return (
         <div className='bg-gray-100'>
+            
             <h1
                 className="title-font text-center sm:text-4xl text-3xl mb-4 pt-10 font-medium text-gray-900">
                 <b>Hospitals</b>
@@ -82,7 +31,7 @@ export default function Content() {
                     <div className="flex flex-wrap -m-4">
 
                         {data.map((elements) => {
-                            if (useCat.cat === "All") {
+                            if (props.Data.length > 0) {
                                 return (
                                     <Link
                                         to="/hospital"

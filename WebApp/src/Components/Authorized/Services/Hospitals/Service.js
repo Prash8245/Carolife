@@ -10,7 +10,7 @@ export default function Service() {
     <div>
         <Navbar />
         <Hero />
-        <Content />
+        
     </div>
   );
 }

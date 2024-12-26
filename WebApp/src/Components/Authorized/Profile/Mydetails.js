@@ -4,6 +4,7 @@ import {BASE_URL} from '../../../config';
 import {toast} from "react-toastify";
 import Navbar from '../Services/Hospitals/Navbar';
 import {Link ,useNavigate} from 'react-router-dom';
+import { commanGet } from '../../../Context/CommanMethods';
 
 export default function Mydetails() {
     const userD = useContext(UserData);
@@ -26,11 +27,21 @@ export default function Mydetails() {
     const dataFetch = async() => {
         try {
             // console.log(userD.userData);
-            const res = await fetch(`${BASE_URL}auth/current/${userD.userData}`, {method: "get"});
+            //const res = await fetch(`${BASE_URL}auth/current/${userD.userData}`, {method: "get"});
+            const url = "auth/current/" + sessionStorage.getItem("Id");
+            console.log(url);
+            console.log(sessionStorage.getItem("Id").toString());
+            const res = await commanGet(url);
+
             const message = await res.json();
             if (!res.ok) { 
-                navigate('/login');
-                throw new Error(message);
+                setTimeout(()=>{
+                    window.location.href = "/login";
+                },5000)
+                
+                return null
+                //navigate('/login');
+                //throw new Error(message);
             }
             toast.success(message);
             // console.log(message);
@@ -53,13 +64,15 @@ export default function Mydetails() {
                 ? setgender(message.data.gender)
                 : setgender("N/A");
 
-                const appoint = await fetch(`${BASE_URL}appointment/getAll/${userD.userData}`,
-                {
-                    method : "get",
-                    headers : {
-                        "Content-Type" : "application/json"
-                    }
-                })
+                // const appoint = await fetch(`${BASE_URL}appointment/getAll/${userD.userData}`,
+                // {
+                //     method : "get",
+                //     headers : {
+                //         "Content-Type" : "application/json"
+                //     }
+                // })
+
+                const appoint = await commanGet("appointment/getAll/"+userD.userData);
         
                 const appointdata = await appoint.json();
                 if(!appoint.ok){
@@ -69,12 +82,14 @@ export default function Mydetails() {
                 // console.log(appointdata);
                 userD.setappointment(appointdata.data);
 
-            const doctorData = await fetch(`${BASE_URL}doctor/DocGet`, {
-                method: "get",
-                headers: {
-                    "Content-Type": "application/json"
-                }
-            });
+                const doctorData = await commanGet("doctor/DocGet");
+
+            // const doctorData = await fetch(`${BASE_URL}doctor/DocGet`, {
+            //     method: "get",
+            //     headers: {
+            //         "Content-Type": "application/json"
+            //     }
+            // });
 
             const result = await doctorData.json();
             if (!doctorData.ok) {
@@ -90,7 +105,7 @@ export default function Mydetails() {
 
     useEffect(() => {
         dataFetch();
-    })
+    },[]);
 
     return (
         <div>

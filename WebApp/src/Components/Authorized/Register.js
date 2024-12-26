@@ -1,18 +1,21 @@
 import React, { useState ,useContext} from 'react';
 import './Page.css';
 import {toast} from "react-toastify";
+import PulseLoader from 'react-spinners/PulseLoader';
 
 import user from '../../Assets/Register/person.png';
 import email from '../../Assets/Register/email.png';
 import password from '../../Assets/Register/password.png';
 import { useNavigate} from 'react-router-dom';
-import {BASE_URL} from "../../config.js";
+//import {BASE_URL} from "../../config.js";
 import { UserData } from '../../Context/userDataContext.js';
+import { commanPost, onLogin } from '../../Context/CommanMethods.js';
 
 
 
 const Register = () => {
     const [action,setAction] = useState("Login");
+    const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
     const userD = useContext(UserData);
 
@@ -27,19 +30,16 @@ const Register = () => {
         console.log(signUpData);
     
         try {
-            const res = await fetch(`${BASE_URL}auth/register/`,
-            {
-                method : "post",
-                headers : {
-                    "Content-Type" : "application/json"
-                },
-                body: JSON.stringify(signUpData)
-            })
-    
+            setLoading(true);
+            const res = await commanPost("auth/register/",signUpData);
             const message = await res.json();
+
             if(!res.ok){
+                setLoading(false);
                 throw new Error(message);
             }
+
+            setLoading(false);
             toast.success(message);
             console.log(message);
             navigate('/login');
@@ -54,30 +54,32 @@ const Register = () => {
             email :document.getElementById('email').value,
             password: document.getElementById('password').value
         }
-        console.log(loginData);
+        //console.log(loginData);
 
         try {
-            const res = await fetch(`${BASE_URL}auth/login/`,
-            {
-                method : "post",
-                headers : {
-                    "Content-Type" : "application/json"
-                },
-                body: JSON.stringify(loginData)
-            })
-    
+            setLoading(true);
+            const res = await onLogin("auth/login/" , loginData)
+            console.log()
             const message = await res.json();
             if(!res.ok){
                 alert(message.message)
+                setLoading(false);
                 throw new Error(message);
             }
+
+            setLoading(false);
             toast.success(message);
-            console.log(message);
+            // console.log(message);
+             console.log(message.data._id)
+            sessionStorage.setItem("Id",message.data._id);
+            sessionStorage.setItem("accessToken",message.accessToken);
+            console.log(sessionStorage.getItem("Id"));
             // setdata(message.data);
             userD.SetuserData(String(message.data._id));
             console.log(userD.userData);
             navigate('/home' )
         } catch (error) {
+            setLoading(false);
             console.log(error);
         }
     }
@@ -86,6 +88,11 @@ const Register = () => {
 
   return (
     <div className="container1 ">
+        <div style={{ position:'fixed',left:'50%', top:'50%' }}>
+            {loading ? (
+                <PulseLoader loading={loading} size={15} color={"#123abc"} />
+            ) : null }
+            </div>
         <div className="header">
             <div className="text">{action}</div>
             <div className="underline"></div>

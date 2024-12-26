@@ -1,46 +1,110 @@
-import React, {useContext} from 'react'
+import React, {useContext ,useEffect, useState} from 'react'
 import {Menu, MenuHandler, MenuList, MenuItem, Button} from '@material-tailwind/react';
 import {UserData} from '../../../Context/userDataContext';
 import {AiTwotoneControl} from "react-icons/ai";
+import { services } from '../../../Context/ArrayContext';
+import {Link} from 'react-router-dom';
+import {toast} from "react-toastify";
+import { commanGet, commanPost } from '../../../Context/CommanMethods';
+import PulseLoader from 'react-spinners/PulseLoader';
+import EmergencyContent from './EmergencyContent';
+
 
 export default function Emer() {
     const search = useContext(UserData);
-    const services = [
-        "All",
-        "Orthopaedic",
-        "Laparoscopic",
-        "Urology",
-        "ENT",
-        "Gynacology",
-        "Ophthamology",
-        "Pediatric",
-        "Anaesthesia",
-        "Radio Diagnosis",
-        "Cardiology",
-        "Obstetrics",
-        "Dermotology",
-        "Pulmonology",
-        "Psychiatry",
-        "Cataract Surgery",
-        "LASIK Eye Surgery",
-        "Haemogram",
-        "Hemoglobin Test",
-        "Ferritin Test",
-        "Coronary Angioplasty",
-        "Urinalysis",
-        "Endoscopy",
-        "Naturopathy",
-        "Acupuncture",
-        "Physiotherapy"
-    ]
-
     const userCat = useContext(UserData);
+
+    const [loading, setLoading] = useState(true);
+    const [data,
+        setdata] = useState([]);
+    const [lat,
+        setlat] = useState(13.017966);
+    const [long,
+        setlong] = useState(77.522527);
+
+    const [Category , setCategory] = useState("All")
+
+
+    const getLocation = async() => {
+        if (navigator.geolocation) {
+            await navigator
+                .geolocation
+                .getCurrentPosition(position => {
+                    const {latitude, longitude} = position.coords;
+                    setlat(latitude);
+                    setlong(longitude);
+                    // console.log(currentLocation)
+                }, error => {
+                    console.error(`Error getting current location: ${error.message}`);
+                });
+        } else {
+            console.error('Geolocation is not supported by this browser.');
+
+        }
+    };
+
+    const fetchData = async() => {
+        try {
+            getLocation();
+            const dataBody = {
+                latitude: lat,
+                longitude: long,
+                search : ""
+            }
+
+            const res = await commanPost("data/hospitals",dataBody);
+            //console.log(res.status);
+            const message = await res.json();
+            if (!res.ok) {
+                if(res.status === "401" || res.status === "403"){
+                    window.location.href = "/login";
+                }else{
+                    setLoading(false);
+                    toast.error(message.message,{
+                        autoClose: 8000,
+                        position: toast.POSITION.TOP_RIGHT, 
+                    })
+                }
+               
+                return null
+                //throw new Error(message);
+            }
+
+            setLoading(false);
+            toast.success(message,{
+                autoClose: 8000,
+                position: toast.POSITION.TOP_RIGHT, 
+            });
+            // console.log(message);
+            setdata(message.data);
+        } catch (error) {
+            console.log(error);
+            toast.error("Error Fetching Data",{
+                autoClose: 8000,
+                position: toast.POSITION.TOP_RIGHT, 
+            })
+            //throw new Error(error);
+        }
+    }
+
+    useEffect(() => {
+        fetchData();
+    },[] );
 
     return (
         <div className='p-6' style={{
             backgroundColor: "#29335c"
         }}>
+            <div style={{ position:'fixed',left:'50%', top:'50%' }}>
+            {loading ? (
+                <PulseLoader loading={loading} size={15} color={"#123abc"} />
+            ) : null }
+            </div>
+            <Link
+                to='/'
+            >
             <p className='text-white p-5 text-xl'>𝒞𝒶𝓇𝑜𝐿𝒾𝒻𝑒</p>
+            </Link>
             <div className='content-center items-center'>
                 <form className='ms-0 sm:ms-80'>
                     <div className="flex">
@@ -57,6 +121,8 @@ export default function Emer() {
                                                 key={index}
                                                 onClick={() => {
                                                 userCat.setcat(elements);
+                                                setCategory(elements);
+                                                fetchData();
                                                 console.log("Category is set to " + elements);
                                                 console.log(userCat.cat);
                                             }}>
@@ -70,6 +136,7 @@ export default function Emer() {
                                     type="search"
                                     onChange={(event) => {
                                     const term = event.target.value;
+                                    
                                     console.log(term);
                                     search.setsearch(term);
                                     console.log(search.search);
@@ -110,6 +177,8 @@ export default function Emer() {
                                                 key={index}
                                                 onClick={() => {
                                                 userCat.setcat(elements);
+                                                setCategory(elements);
+                                                fetchData();
                                                 console.log("Category is set to " + elements);
                                                 console.log(userCat.cat);
                                             }}>
@@ -155,6 +224,7 @@ export default function Emer() {
                     </div>
                 </form>
             </div>
+            <EmergencyContent Data = {data} Category = {Category}/>
         </div>
     )
 }

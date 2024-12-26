@@ -27,6 +27,7 @@ function Navbar() {
 				<Link to={'/profile'}>Profile</Link>
 				<Link to='/' onClick={()=>{
 					userD.SetuserData(null);
+					sessionStorage.removeItem("accessToken");
 				}}>Logout</Link>
 				{/* onClick={getUserData} */}
 
